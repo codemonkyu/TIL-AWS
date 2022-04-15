@@ -1,1 +1,0 @@
-https://git-codecommit.ap-northeast-2.amazonaws.com/v1/repos/wildrydes-site
