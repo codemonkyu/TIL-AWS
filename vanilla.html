@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <!-- html -->
+  <body>
+    <span>Total clicks: 0 </span>
+    <button id="btn">click me</button>
+  </body>
+  <!-- js -->
+  <script>
+    let counter = 0;
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+    function handelClick() {
+      counter = counter + 1;
+      span.innerText = `Total clicks: ${counter}`;
+    }
+    button.addEventListener("click", handelClick);
+    // handle로 정보 불러오기 
+  </script>
+</html>
