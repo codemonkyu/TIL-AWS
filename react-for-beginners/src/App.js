@@ -1,15 +1,16 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    fetch("https://api.coinpaprika.com/v1/tickers").then();
-  }, []);
   return (
-    <div>
-      <h1> The coins </h1>
-      {loading ? <strong>Loading......</strong> : null}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Detail" element={<Detail />} />
+      </Routes>
+    </Router>
   );
 }
+
 export default App;
